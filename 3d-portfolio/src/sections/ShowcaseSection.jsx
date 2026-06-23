@@ -6,30 +6,36 @@ import TitleHeader from "../components/TitleHeader";
 
 gsap.registerPlugin(ScrollTrigger);
 
+onst MOVIE_APP_URL = "https://your-movie-app.vercel.app";
+const BRAINWAVE_URL = "https://brainwave.vercel.app";
+const PIZZA_CO_URL = "https://pizza-co.vercel.app";
+
 const projects = [
   {
     title: "Movie Explorer Platform",
-    description: "A responsive movie discovery app with trending movies, real-time search, and detailed movie pages.",
+    description:
+      "A responsive movie discovery app with trending movies, real-time search, and detailed movie pages.",
     image: "/images/project1.png",
-    link: "https://your-movie-app.vercel.app",
+    link: MOVIE_APP_URL,
     tech: ["React", "Tailwind CSS", "API"],
   },
   {
     title: "Brainwave SaaS Landing Page",
-    description: "A modern SaaS landing page with clean sections, smooth interactions, and responsive UI.",
+    description:
+      "A modern SaaS landing page with clean sections, smooth interactions, and responsive UI.",
     image: "/images/project2.png",
-    link: "https://brainwave.vercel.app",
+    link: BRAINWAVE_URL,
     tech: ["React", "Tailwind CSS", "GSAP"],
   },
   {
     title: "Pizza Co Ordering App",
-    description: "A pizza ordering web app with dynamic menu, cart functionality, and smooth user experience.",
+    description:
+      "A pizza ordering web app with dynamic menu, cart functionality, and smooth user experience.",
     image: "/images/project3.png",
-    link: "https://pizza-co.vercel.app",
+    link: PIZZA_CO_URL,
     tech: ["React", "Cart", "Responsive UI"],
   },
 ];
-
 const AppShowcase = () => {
   const sectionRef = useRef(null);
 
