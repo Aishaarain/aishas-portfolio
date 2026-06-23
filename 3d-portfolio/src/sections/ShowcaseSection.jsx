@@ -6,7 +6,7 @@ import TitleHeader from "../components/TitleHeader";
 
 gsap.registerPlugin(ScrollTrigger);
 
-onst MOVIE_APP_URL = "https://your-movie-app.vercel.app";
+const MOVIE_APP_URL = "https://your-movie-app.vercel.app";
 const BRAINWAVE_URL = "https://brainwave.vercel.app";
 const PIZZA_CO_URL = "https://pizza-co.vercel.app";
 
