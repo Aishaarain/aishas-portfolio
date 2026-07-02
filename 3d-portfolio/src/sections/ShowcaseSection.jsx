@@ -7,8 +7,8 @@ import TitleHeader from "../components/TitleHeader";
 gsap.registerPlugin(ScrollTrigger);
 
 const MOVIE_APP_URL = "https://pair-programing-movie-app.vercel.app/";
-const BRAINWAVE_URL = "https://aishaarain.github.io/BrainWave/";
-const PIZZA_CO_URL = "https://react-pizza-co-two.vercel.app/";
+const Cliently_crm = "https://cliently-crm-freelance.vercel.app/";
+const studdy_buddy = "https://aipowered-study-buddy.vercel.app/";
 
 const projects = [
   {
@@ -20,21 +20,21 @@ const projects = [
     tech: ["React", "Tailwind CSS", "API"],
   },
   {
-    title: "Brainwave SaaS Landing Page",
-    description:
-      "A modern SaaS landing page with clean sections, smooth interactions, and responsive UI.",
-    image: "/images/project2.png",
-    link: BRAINWAVE_URL,
-    tech: ["React", "Tailwind CSS", "GSAP"],
-  },
-  {
-    title: "Pizza Co Ordering App",
-    description:
-      "A pizza ordering web app with dynamic menu, cart functionality, and smooth user experience.",
-    image: "/images/project3.png",
-    link: PIZZA_CO_URL,
-    tech: ["React", "Cart", "Responsive UI"],
-  },
+  title: "Study Buddy",
+  description:
+    "A smart study companion app that helps students organize tasks, track study sessions, and improve productivity.",
+  image: "/images/study-buddy.png",
+  link: STUDY_BUDDY_URL,
+  tech: ["React", "Tailwind CSS", "Supabase"],
+},
+{
+  title: "Freelance CRM",
+  description:
+    "A client management dashboard for freelancers to track projects, manage clients, invoices, and workflow efficiently.",
+  image: "/images/freelance-crm.png",
+  link: FREELANCE_CRM_URL,
+  tech: ["React", "Tailwind CSS", "Express","NodeJS],
+}
 ];
 const AppShowcase = () => {
   const sectionRef = useRef(null);
