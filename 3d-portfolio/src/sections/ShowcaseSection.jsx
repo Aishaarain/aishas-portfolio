@@ -5,10 +5,9 @@ import { useGSAP } from "@gsap/react";
 import TitleHeader from "../components/TitleHeader";
 
 gsap.registerPlugin(ScrollTrigger);
-
 const MOVIE_APP_URL = "https://pair-programing-movie-app.vercel.app/";
-const Cliently_crm = "https://cliently-crm-freelance.vercel.app/";
-const studdy_buddy = "https://aipowered-study-buddy.vercel.app/";
+const STUDY_BUDDY_URL = "https://aipowered-study-buddy.vercel.app/";
+const FREELANCE_CRM_URL = "https://cliently-crm-freelance.vercel.app/";
 
 const projects = [
   {
@@ -20,21 +19,21 @@ const projects = [
     tech: ["React", "Tailwind CSS", "API"],
   },
   {
-  title: "Study Buddy",
-  description:
-    "A smart study companion app that helps students organize tasks, track study sessions, and improve productivity.",
-  image: "/images/study-buddy.png",
-  link: STUDY_BUDDY_URL,
-  tech: ["React", "Tailwind CSS", "Supabase"],
-},
-{
-  title: "Freelance CRM",
-  description:
-    "A client management dashboard for freelancers to track projects, manage clients, invoices, and workflow efficiently.",
-  image: "/images/freelance-crm.png",
-  link: FREELANCE_CRM_URL,
-  tech: ["React", "Tailwind CSS", "Express","NodeJS],
-}
+    title: "Study Buddy",
+    description:
+      "A smart study companion app that helps students organize tasks, track study sessions, and improve productivity.",
+    image: "/images/study-buddy.png",
+    link: STUDY_BUDDY_URL,
+    tech: ["React", "Tailwind CSS", "Supabase"],
+  },
+  {
+    title: "Freelance CRM",
+    description:
+      "A client management dashboard for freelancers to track projects, manage clients, invoices, and workflow efficiently.",
+    image: "/images/freelance-crm.png",
+    link: FREELANCE_CRM_URL,
+    tech: ["React", "Tailwind CSS", "Express", "NodeJS"],
+  },
 ];
 const AppShowcase = () => {
   const sectionRef = useRef(null);
