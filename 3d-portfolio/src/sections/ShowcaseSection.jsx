@@ -22,7 +22,7 @@ const projects = [
     title: "Study Buddy",
     description:
       "A smart study companion app that helps students organize tasks, track study sessions, and improve productivity.",
-    image: "/images/study-buddy.png",
+    image: "/images/study_buddy.png",
     link: STUDY_BUDDY_URL,
     tech: ["React", "Tailwind CSS", "Supabase"],
   },
@@ -30,7 +30,7 @@ const projects = [
     title: "Freelance CRM",
     description:
       "A client management dashboard for freelancers to track projects, manage clients, invoices, and workflow efficiently.",
-    image: "/images/freelance-crm.png",
+    image: "/images/Cliently_crm.png",
     link: FREELANCE_CRM_URL,
     tech: ["React", "Tailwind CSS", "Express", "NodeJS"],
   },
