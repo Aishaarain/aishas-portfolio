@@ -1,22 +1,26 @@
 import React from "react";
 
 export default function DeveloperBanner({
-  photoSrc = "/images/me2.png",
+  photoSrc = "/images/me1.png",
   title = "DEVELOPER",
 }) {
   return (
     <section
       className="
-      relative
-      overflow-hidden
-      bg-[#030712]
-      py-24
-      md:py-36
-      min-h-[700px]
-      md:min-h-[900px]
-      flex
-      items-center
-      justify-center
+        relative
+        overflow-hidden
+        bg-[#030712]
+        py-16
+        sm:py-20
+        md:py-28
+        lg:py-36
+        min-h-[520px]
+        sm:min-h-[620px]
+        md:min-h-[760px]
+        lg:min-h-[900px]
+        flex
+        items-center
+        justify-center
       "
     >
       {/* Background Glow */}
@@ -35,109 +39,115 @@ export default function DeveloperBanner({
         }}
       />
 
-      <div className="relative w-full max-w-7xl px-6">
+      <div className="relative w-full max-w-7xl px-4 sm:px-6">
 
-        <p className="mb-8 text-center uppercase tracking-[12px] text-cyan-400 font-semibold text-sm">
-          MERN STACK 
+        {/* Small Heading */}
+        <p
+          className="
+            mb-6
+            text-center
+            uppercase
+            font-semibold
+            text-cyan-400
+            tracking-[6px]
+            sm:tracking-[10px]
+            md:tracking-[12px]
+            text-[11px]
+            sm:text-xs
+            md:text-sm
+          "
+        >
+          MERN STACK
         </p>
 
-       <div
-  className="
-    relative
-    flex
-    items-center
-    justify-center
-
-    h-[240px]
-    sm:h-[320px]
-    md:h-[430px]
-    lg:h-[520px]
-    xl:h-[620px]
-  "
->
+        {/* Main Banner */}
+        <div
+          className="
+            relative
+            flex
+            items-center
+            justify-center
+            h-[260px]
+            sm:h-[340px]
+            md:h-[500px]
+            lg:h-[620px]
+          "
+        >
           {/* Filled Text */}
           <h1
-  aria-hidden="true"
-  className="
-    absolute inset-0 z-20
-    flex items-center justify-center
-    font-black uppercase
-    leading-[0.8]
-    tracking-[-0.06em]
-    text-transparent
-    pointer-events-none
-    select-none
-    whitespace-nowrap
-
-    text-[4.2rem]
-    sm:text-[6rem]
-    md:text-[8rem]
-    lg:text-[10rem]
-    xl:text-[13rem]
-    2xl:text-[15rem]
-  "
-  style={{
-    WebkitTextStroke: "2px rgba(255,255,255,.16)",
-  }}
->
-  {title}
-</h1>
+            className="
+              absolute
+              inset-0
+              flex
+              items-center
+              justify-center
+              font-black
+              uppercase
+              leading-none
+              tracking-[-0.06em]
+              text-[#d9d9d9]
+              select-none
+            "
+            style={{
+              fontSize: "clamp(3rem,18vw,17rem)",
+            }}
+          >
+            {title}
+          </h1>
 
           {/* Transparent PNG */}
           <div
             className="
-            absolute
-            z-10
-            bottom-0
-            left-1/2
-            -translate-x-1/2
-            h-full
-            flex
-            items-end
-            justify-center
+              absolute
+              bottom-0
+              left-1/2
+              -translate-x-1/2
+              z-10
             "
           >
-          <img
-  src="/images/me2.png"
-  alt="Aisha Arain"
-  className="
-    relative z-10
-    w-[420px]
-    sm:w-[500px]
-    md:w-[560px]
-    lg:w-[620px]
-    xl:w-[680px]
-    object-contain
-    transition-all
-    duration-500
-    hover:scale-105
-  "
-/>
+            <img
+              src={photoSrc}
+              alt="Aisha Arain"
+              className="
+                w-[110px]
+                sm:w-[170px]
+                md:w-[250px]
+                lg:w-[340px]
+                xl:w-[420px]
+                object-contain
+                drop-shadow-[0_35px_60px_rgba(0,0,0,.45)]
+                transition-all
+                duration-500
+                hover:scale-105
+              "
+            />
           </div>
 
           {/* Outline Text */}
-         <h1
-  className="
-    absolute inset-0
-    flex items-center justify-center
-    font-black uppercase
-    leading-[0.8]
-    tracking-[-0.06em]
-    text-[#d9d9d9]
-    select-none
-    whitespace-nowrap
-
-    text-[4.2rem]
-    sm:text-[6rem]
-    md:text-[8rem]
-    lg:text-[10rem]
-    xl:text-[13rem]
-    2xl:text-[15rem]
-  "
->
-  {title}
-</h1>
-
+          <h1
+            aria-hidden="true"
+            className="
+              absolute
+              inset-0
+              z-20
+              flex
+              items-center
+              justify-center
+              font-black
+              uppercase
+              leading-none
+              tracking-[-0.06em]
+              text-transparent
+              pointer-events-none
+              select-none
+            "
+            style={{
+              fontSize: "clamp(3rem,18vw,17rem)",
+              WebkitTextStroke: "2px rgba(255,255,255,.16)",
+            }}
+          >
+            {title}
+          </h1>
         </div>
       </div>
     </section>
