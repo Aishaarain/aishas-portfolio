@@ -1,26 +1,22 @@
 import React from "react";
 
 export default function DeveloperBanner({
-  photoSrc = "/images/me2.png",
+  photoSrc = "/images/me1.png",
   title = "DEVELOPER",
 }) {
   return (
     <section
       className="
-        relative
-        overflow-hidden
-        bg-[#030712]
-        py-16
-        sm:py-20
-        md:py-28
-        lg:py-36
-        min-h-[520px]
-        sm:min-h-[620px]
-        md:min-h-[760px]
-        lg:min-h-[900px]
-        flex
-        items-center
-        justify-center
+      relative
+      overflow-hidden
+      bg-[#030712]
+      py-24
+      md:py-36
+      min-h-[700px]
+      md:min-h-[900px]
+      flex
+      items-center
+      justify-center
       "
     >
       {/* Background Glow */}
@@ -39,122 +35,92 @@ export default function DeveloperBanner({
         }}
       />
 
-      <div className="relative w-full max-w-7xl px-4 sm:px-6">
-        {/* Small Heading */}
-        <p
-          className="
-            mb-6
-            text-center
-            uppercase
-            font-semibold
-            text-cyan-400
-            tracking-[6px]
-            sm:tracking-[10px]
-            md:tracking-[12px]
-            text-[11px]
-            sm:text-xs
-            md:text-sm
-          "
-        >
-          MERN STACK
+      <div className="relative w-full max-w-7xl px-6">
+
+        <p className="mb-8 text-center uppercase tracking-[12px] text-cyan-400 font-semibold text-sm">
+          MERN STACK 
         </p>
 
-        {/* Main Banner */}
-        <div
-          className="
-            relative
-            flex
-            items-center
-            justify-center
-            h-[260px]
-            sm:h-[340px]
-            md:h-[500px]
-            lg:h-[620px]
-          "
-        >
+        <div className="relative flex items-center justify-center h-[420px] md:h-[620px]">
+
           {/* Filled Text */}
           <h1
             className="
-              absolute
-              inset-0
-              flex
-              items-center
-              justify-center
-              font-black
-              uppercase
-              leading-none
-              tracking-[-0.06em]
-              text-[#d9d9d9]
-              select-none
+            absolute
+            inset-0
+            flex
+            items-center
+            justify-center
+            font-black
+            uppercase
+            tracking-[-0.08em]
+            text-[#d9d9d9]
+            leading-none
+            select-none
             "
             style={{
-              fontSize: "clamp(3rem,18vw,17rem)",
+              fontSize: "clamp(6rem,18vw,17rem)",
             }}
           >
             {title}
           </h1>
+
+          {/* Transparent PNG */}
+          <div
+            className="
+            absolute
+            z-10
+            bottom-0
+            left-1/2
+            -translate-x-1/2
+            h-full
+            flex
+            items-end
+            justify-center
+            "
+          >
+            <img
+              src={photoSrc}
+              alt="Aisha Arain"
+              className="
+              h-full
+              w-auto
+              object-contain
+              object-bottom
+              drop-shadow-[0_40px_60px_rgba(0,0,0,.45)]
+              transition-transform
+              duration-500
+              hover:scale-105
+              "
+            />
+          </div>
 
           {/* Outline Text */}
           <h1
             aria-hidden="true"
             className="
-              absolute
-              inset-0
-              z-20
-              flex
-              items-center
-              justify-center
-              font-black
-              uppercase
-              leading-none
-              tracking-[-0.06em]
-              text-transparent
-              pointer-events-none
-              select-none
+            absolute
+            inset-0
+            z-20
+            flex
+            items-center
+            justify-center
+            font-black
+            uppercase
+            tracking-[-0.08em]
+            text-transparent
+            pointer-events-none
+            select-none
             "
             style={{
-              fontSize: "clamp(3rem,18vw,17rem)",
+              fontSize: "clamp(6rem,18vw,17rem)",
               WebkitTextStroke: "2px rgba(255,255,255,.16)",
             }}
           >
             {title}
           </h1>
-        </div>
-      </div>
 
-      {/*
-        Photo is anchored to the SECTION now, not the text row.
-        This lets it grow much taller/wider and sit on top of both
-        the filled and outline text layers without being boxed in
-        by the h-[...] wrapper above.
-      */}
-      <div
-        className="
-          absolute
-          bottom-0
-          left-1/2
-          -translate-x-1/2
-          z-30
-          pointer-events-none
-        "
-      >
-        <img
-          src={photoSrc}
-          alt="Aisha Arain"
-          className="
-            w-[240px]
-            sm:w-[360px]
-            md:w-[500px]
-            lg:w-[620px]
-            xl:w-[720px]
-            object-contain
-            drop-shadow-[0_35px_60px_rgba(0,0,0,.55)]
-            transition-transform
-            duration-500
-            pointer-events-auto
-            hover:scale-105
-          "
-        />
+        </div>
       </div>
     </section>
   );
