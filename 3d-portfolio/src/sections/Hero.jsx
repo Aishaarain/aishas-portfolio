@@ -130,9 +130,7 @@ const Hero = () => {
           </div>
         </header>
 
-        <div className="hero-reveal relative order-2 mx-auto mt-8 h-[300px] w-full max-w-[420px] sm:h-[360px] md:h-[430px] lg:order-none lg:mt-0 lg:h-[560px] lg:max-w-none">
-          <HeroExperience />
-        </div>
+        
       </div>
     </section>
   );
