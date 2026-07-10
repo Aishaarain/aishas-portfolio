@@ -14,10 +14,10 @@ export default function DeveloperBanner({
         sm:py-20
         md:py-28
         lg:py-36
-        min-h-[560px]
-        sm:min-h-[640px]
-        md:min-h-[780px]
-        lg:min-h-[920px]
+        min-h-[520px]
+        sm:min-h-[620px]
+        md:min-h-[760px]
+        lg:min-h-[900px]
         flex
         items-center
         justify-center
@@ -25,7 +25,6 @@ export default function DeveloperBanner({
     >
       {/* Background Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(34,211,238,.12),transparent_30%),radial-gradient(circle_at_80%_20%,rgba(124,58,237,.12),transparent_35%)]" />
-
       {/* Stars */}
       <div
         className="absolute inset-0 opacity-70"
@@ -38,7 +37,6 @@ export default function DeveloperBanner({
           `,
         }}
       />
-
       <div className="relative w-full max-w-7xl px-4 sm:px-6">
         {/* Small Heading */}
         <p
@@ -58,7 +56,6 @@ export default function DeveloperBanner({
         >
           MERN STACK
         </p>
-
         {/* Main Banner */}
         <div
           className="
@@ -93,7 +90,36 @@ export default function DeveloperBanner({
           >
             {title}
           </h1>
-
+          {/* Transparent PNG */}
+          <div
+            className="
+              absolute
+              bottom-0
+              left-1/2
+              -translate-x-1/2
+              z-10
+            "
+            style={{
+              width: "clamp(180px, 40vw, 500px)",
+            }}
+          >
+            <img
+              src={photoSrc}
+              alt="Aisha Arain"
+              className="
+                w-full
+                object-contain
+                drop-shadow-[0_35px_60px_rgba(0,0,0,.45)]
+                transition-transform
+                duration-500
+                hover:scale-105
+              "
+              style={{
+                transform: "scale(1.15)",
+                transformOrigin: "bottom center",
+              }}
+            />
+          </div>
           {/* Outline Text */}
           <h1
             aria-hidden="true"
@@ -120,48 +146,6 @@ export default function DeveloperBanner({
             {title}
           </h1>
         </div>
-      </div>
-
-      {/*
-        Photo anchored to the SECTION (not the text row) so it can grow
-        freely. Width uses a fluid clamp() so it scales smoothly across
-        every screen size instead of jumping at breakpoints. It's also
-        nudged up with translateY so the head clears the top of the
-        letters instead of sitting mid-height inside them.
-      */}
-      <div
-        className="
-          absolute
-          left-1/2
-          bottom-0
-          z-30
-          pointer-events-none
-          -translate-x-1/2
-          translate-y-[6%]
-          sm:translate-y-[4%]
-          md:translate-y-[2%]
-        "
-        style={{
-          width: "clamp(260px, 55vw, 760px)",
-        }}
-      >
-        <img
-          src={photoSrc}
-          alt="Aisha Arain"
-          className="
-            w-full
-            object-contain
-            drop-shadow-[0_35px_60px_rgba(0,0,0,.55)]
-            transition-transform
-            duration-500
-            pointer-events-auto
-            hover:scale-105
-          "
-          style={{
-            transform: "scale(1.18)",
-            transformOrigin: "bottom center",
-          }}
-        />
       </div>
     </section>
   );
