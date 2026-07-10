@@ -60,14 +60,14 @@ const Hero = () => {
     <section
       id="hero"
       ref={heroRef}
-      className="relative min-h-screen overflow-hidden bg-[#030712] pt-24 text-white"
+      className="relative min-h-screen overflow-hidden bg-[#030712] pt-20 text-white"
     >
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(34,211,238,0.16),transparent_32%),radial-gradient(circle_at_80%_30%,rgba(124,58,237,0.16),transparent_34%)]" />
+      <div className="pointer-events-none absolute inset-0 " />
 
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#030712] to-transparent" />
 
-      <div className="relative z-10 mx-auto grid min-h-[calc(100vh-6rem)] max-w-7xl items-center gap-8 px-4 py-8 sm:px-6 md:gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:px-8">
-        <header className="max-w-3xl">
+      <div className="relative z-10 mx-auto grid min-h-[calc(100vh-6rem)] max-w-7xl items-center gap-8 px-4 py-8 sm:px-6 md:gap-10 lg:grid-cols-[1.5fr_0.5fr] lg:px-8">
+        <header className="max-w-5xl">
           <p className="hero-reveal mb-5 inline-flex rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-cyan-200">
             MERN Stack Developer
           </p>
@@ -130,7 +130,9 @@ const Hero = () => {
           </div>
         </header>
 
-        
+        {/* <div className="hero-reveal relative order-2 mx-auto mt-8 h-[300px] w-full max-w-[420px] sm:h-[360px] md:h-[430px] lg:order-none lg:mt-0 lg:h-[560px] lg:max-w-none">
+          <HeroExperience />
+        </div> */}
       </div>
     </section>
   );
