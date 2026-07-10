@@ -63,8 +63,8 @@ export default function DeveloperBanner({
             flex
             items-center
             justify-center
-            h-[260px]
-            sm:h-[340px]
+            h-[300px]
+            sm:h-[380px]
             md:h-[500px]
             lg:h-[620px]
           "
@@ -100,7 +100,7 @@ export default function DeveloperBanner({
               z-10
             "
             style={{
-              width: "clamp(180px, 40vw, 500px)",
+              width: "clamp(260px, 68vw, 500px)",
             }}
           >
             <img
@@ -115,7 +115,7 @@ export default function DeveloperBanner({
                 hover:scale-105
               "
               style={{
-                transform: "scale(1.15)",
+                transform: "scale(1.3)",
                 transformOrigin: "bottom center",
               }}
             />
