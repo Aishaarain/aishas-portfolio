@@ -60,13 +60,13 @@ const Hero = () => {
     <section
       id="hero"
       ref={heroRef}
-      className="relative min-h-screen overflow-hidden bg-[#030712] pt-20 text-white"
+      className="relative overflow-hidden bg-[#030712] pt-24 sm:pt-28 lg:min-h-screen lg:pt-20 text-white"
     >
       <div className="pointer-events-none absolute inset-0 " />
 
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#030712] to-transparent" />
 
-      <div className="relative z-10 mx-auto grid min-h-[calc(100vh-6rem)] max-w-7xl items-center gap-8 px-4 py-8 sm:px-6 md:gap-10 lg:grid-cols-[1.5fr_0.5fr] lg:px-8">
+      <div className="relative z-10 mx-auto grid max-w-7xl items-start gap-8 px-4 py-8 sm:px-6 md:gap-10 lg:min-h-[calc(100vh-6rem)] lg:items-center lg:grid-cols-[1.5fr_0.5fr] lg:px-8">
         <header className="max-w-5xl">
 
           <div className="hero-text hero-reveal relative isolate overflow-visible">
