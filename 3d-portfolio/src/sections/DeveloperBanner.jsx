@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function DeveloperBanner({
-  photoSrc = "/images/me1.png",
+  photoSrc = "/images/me2.png",
   title = "DEVELOPER",
 }) {
   return (
