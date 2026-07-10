@@ -40,7 +40,6 @@ export default function DeveloperBanner({
       />
 
       <div className="relative w-full max-w-7xl px-4 sm:px-6">
-
         {/* Small Heading */}
         <p
           className="
@@ -95,34 +94,6 @@ export default function DeveloperBanner({
             {title}
           </h1>
 
-          {/* Transparent PNG */}
-          <div
-            className="
-              absolute
-              bottom-0
-              left-1/2
-              -translate-x-1/2
-              z-10
-            "
-          >
-            <img
-              src={photoSrc}
-              alt="Aisha Arain"
-              className="
-                w-[110px]
-                sm:w-[170px]
-                md:w-[250px]
-                lg:w-[340px]
-                xl:w-[420px]
-                object-contain
-                drop-shadow-[0_35px_60px_rgba(0,0,0,.45)]
-                transition-all
-                duration-500
-                hover:scale-105
-              "
-            />
-          </div>
-
           {/* Outline Text */}
           <h1
             aria-hidden="true"
@@ -149,6 +120,41 @@ export default function DeveloperBanner({
             {title}
           </h1>
         </div>
+      </div>
+
+      {/*
+        Photo is anchored to the SECTION now, not the text row.
+        This lets it grow much taller/wider and sit on top of both
+        the filled and outline text layers without being boxed in
+        by the h-[...] wrapper above.
+      */}
+      <div
+        className="
+          absolute
+          bottom-0
+          left-1/2
+          -translate-x-1/2
+          z-30
+          pointer-events-none
+        "
+      >
+        <img
+          src={photoSrc}
+          alt="Aisha Arain"
+          className="
+            w-[240px]
+            sm:w-[360px]
+            md:w-[500px]
+            lg:w-[620px]
+            xl:w-[720px]
+            object-contain
+            drop-shadow-[0_35px_60px_rgba(0,0,0,.55)]
+            transition-transform
+            duration-500
+            pointer-events-auto
+            hover:scale-105
+          "
+        />
       </div>
     </section>
   );
