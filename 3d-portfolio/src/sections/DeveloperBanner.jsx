@@ -41,29 +41,47 @@ export default function DeveloperBanner({
           MERN STACK 
         </p>
 
-        <div className="relative flex items-center justify-center h-[420px] md:h-[620px]">
+       <div
+  className="
+    relative
+    flex
+    items-center
+    justify-center
 
+    h-[240px]
+    sm:h-[320px]
+    md:h-[430px]
+    lg:h-[520px]
+    xl:h-[620px]
+  "
+>
           {/* Filled Text */}
           <h1
-            className="
-            absolute
-            inset-0
-            flex
-            items-center
-            justify-center
-            font-black
-            uppercase
-            tracking-[-0.08em]
-            text-[#d9d9d9]
-            leading-none
-            select-none
-            "
-            style={{
-              fontSize: "clamp(6rem,18vw,17rem)",
-            }}
-          >
-            {title}
-          </h1>
+  aria-hidden="true"
+  className="
+    absolute inset-0 z-20
+    flex items-center justify-center
+    font-black uppercase
+    leading-[0.8]
+    tracking-[-0.06em]
+    text-transparent
+    pointer-events-none
+    select-none
+    whitespace-nowrap
+
+    text-[4.2rem]
+    sm:text-[6rem]
+    md:text-[8rem]
+    lg:text-[10rem]
+    xl:text-[13rem]
+    2xl:text-[15rem]
+  "
+  style={{
+    WebkitTextStroke: "2px rgba(255,255,255,.16)",
+  }}
+>
+  {title}
+</h1>
 
           {/* Transparent PNG */}
           <div
@@ -79,46 +97,46 @@ export default function DeveloperBanner({
             justify-center
             "
           >
-            <img
-              src={photoSrc}
-              alt="Aisha Arain"
-              className="
-              h-full
-              w-auto
-              object-contain
-              object-bottom
-              drop-shadow-[0_40px_60px_rgba(0,0,0,.45)]
-              transition-transform
-              duration-500
-              hover:scale-105
-              "
-            />
+           <img
+  src={photoSrc}
+  alt="Aisha Arain"
+  className="
+    h-[90%]
+    sm:h-[95%]
+    md:h-full
+    w-auto
+    object-contain
+    object-bottom
+    drop-shadow-[0_40px_60px_rgba(0,0,0,.45)]
+    transition-all
+    duration-500
+    hover:scale-105
+  "
+/>
           </div>
 
           {/* Outline Text */}
-          <h1
-            aria-hidden="true"
-            className="
-            absolute
-            inset-0
-            z-20
-            flex
-            items-center
-            justify-center
-            font-black
-            uppercase
-            tracking-[-0.08em]
-            text-transparent
-            pointer-events-none
-            select-none
-            "
-            style={{
-              fontSize: "clamp(6rem,18vw,17rem)",
-              WebkitTextStroke: "2px rgba(255,255,255,.16)",
-            }}
-          >
-            {title}
-          </h1>
+         <h1
+  className="
+    absolute inset-0
+    flex items-center justify-center
+    font-black uppercase
+    leading-[0.8]
+    tracking-[-0.06em]
+    text-[#d9d9d9]
+    select-none
+    whitespace-nowrap
+
+    text-[4.2rem]
+    sm:text-[6rem]
+    md:text-[8rem]
+    lg:text-[10rem]
+    xl:text-[13rem]
+    2xl:text-[15rem]
+  "
+>
+  {title}
+</h1>
 
         </div>
       </div>
