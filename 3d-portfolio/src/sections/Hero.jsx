@@ -68,9 +68,6 @@ const Hero = () => {
 
       <div className="relative z-10 mx-auto grid min-h-[calc(100vh-6rem)] max-w-7xl items-center gap-8 px-4 py-8 sm:px-6 md:gap-10 lg:grid-cols-[1.5fr_0.5fr] lg:px-8">
         <header className="max-w-5xl">
-          <p className="hero-reveal mb-5 inline-flex rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-cyan-200">
-            MERN Stack Developer
-          </p>
 
           <div className="hero-text hero-reveal relative isolate overflow-visible">
             <HeroTextParticles />
