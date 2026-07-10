@@ -4,7 +4,7 @@ import gsap from "gsap";
 
 import Button from "../components/Button";
 import { words } from "../constants";
-import HeroExperience from "../components/models/hero_models/HeroExperience";
+
 
 const textParticles = Array.from({ length: 32 }, (_, index) => ({
   id: index,
