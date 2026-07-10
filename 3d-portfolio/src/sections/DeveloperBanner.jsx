@@ -97,17 +97,17 @@ export default function DeveloperBanner({
             justify-center
             "
           >
-           <img
-  src={photoSrc}
+          <img
+  src="/images/me2.png"
   alt="Aisha Arain"
   className="
-    h-[90%]
-    sm:h-[95%]
-    md:h-full
-    w-auto
+    relative z-10
+    w-[420px]
+    sm:w-[500px]
+    md:w-[560px]
+    lg:w-[620px]
+    xl:w-[680px]
     object-contain
-    object-bottom
-    drop-shadow-[0_40px_60px_rgba(0,0,0,.45)]
     transition-all
     duration-500
     hover:scale-105
