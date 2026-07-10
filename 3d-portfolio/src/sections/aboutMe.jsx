@@ -48,7 +48,7 @@ const AboutMe = () => {
 
     {/* Image */}
     <img
-      src="/images/me3.PNG"
+      src="/images/me2.png"
       alt="Aisha Arain"
       className="relative z-10 w-[360px] md:w-[430px] object-contain transition duration-500 hover:scale-105"
     />
